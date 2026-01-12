@@ -28,8 +28,8 @@ export default function TermsOfService() {
       <main className="max-w-4xl mx-auto px-6 py-12">
         <article className="prose">
           <h1>Terms of Service</h1>
-          <p><strong>Last Updated:</strong> December 24, 2025</p>
-          <p><strong>Effective Date:</strong> December 24, 2025</p>
+          <p><strong>Last Updated:</strong> January 12, 2026</p>
+          <p><strong>Effective Date:</strong> January 12, 2026</p>
 
           <p>
             Welcome to DealKit. These Terms of Service (&quot;Terms&quot;) govern your use of the 
@@ -63,22 +63,21 @@ export default function TermsOfService() {
             <li>Distribute, sell, or transfer the App without our permission</li>
           </ul>
 
-          <h2>4. Premium Features and Payments</h2>
+          <h2>4. Free Service</h2>
           <p>
-            DealKit offers both free and premium features. Premium features require a 
-            subscription purchased through the Apple App Store or Google Play Store.
+            DealKit is currently provided free of charge. All features are available at no cost.
           </p>
           <ul>
-            <li>Subscription prices are displayed in the App</li>
-            <li>Subscriptions automatically renew unless canceled</li>
-            <li>Refunds are subject to Apple/Google&apos;s refund policies</li>
-            <li>We reserve the right to change pricing with reasonable notice</li>
+            <li>We reserve the right to introduce premium features in the future</li>
+            <li>If premium features are introduced, existing free features will remain free</li>
+            <li>Any future paid features will be clearly marked and optional</li>
+            <li>We will provide reasonable notice before any pricing changes</li>
           </ul>
 
           <h2>5. AI-Powered Features</h2>
           <p>
-            Our AI-powered features (Contract Review, Fair Price Calculator, Email Assistant) 
-            are provided &quot;as is&quot; and for informational purposes only.
+            Our AI-powered features (such as the Email Assistant) are provided &quot;as is&quot; 
+            and for informational purposes only.
           </p>
           <ul>
             <li>AI suggestions are not professional legal, financial, or business advice</li>

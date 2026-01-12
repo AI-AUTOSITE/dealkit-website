@@ -28,8 +28,8 @@ export default function PrivacyPolicy() {
       <main className="max-w-4xl mx-auto px-6 py-12">
         <article className="prose">
           <h1>Privacy Policy</h1>
-          <p><strong>Last Updated:</strong> December 24, 2025</p>
-          <p><strong>Effective Date:</strong> December 24, 2025</p>
+          <p><strong>Last Updated:</strong> January 12, 2026</p>
+          <p><strong>Effective Date:</strong> January 12, 2026</p>
           
           <p>
             Defrust (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) operates the DealKit mobile application 
@@ -58,8 +58,8 @@ export default function PrivacyPolicy() {
           </p>
           <ul>
             <li><strong>Deal Information:</strong> Brand names, deal values, deadlines, notes, and status</li>
-            <li><strong>Invoice Information:</strong> Invoice amounts, due dates, payment status</li>
             <li><strong>Brand/Contact Information:</strong> Company names, contact details, notes</li>
+            <li><strong>Profile Information:</strong> Your display name, social media handles, follower counts</li>
           </ul>
           <p>
             <strong>Important:</strong> This information is stored locally on your device and is not 
@@ -81,14 +81,12 @@ export default function PrivacyPolicy() {
             </li>
           </ul>
 
-          <h3>2.3 AI-Powered Features (Premium)</h3>
+          <h3>2.3 AI-Powered Features</h3>
           <p>
-            DealKit offers optional AI-powered features that require sending data to our secure 
+            DealKit offers AI-powered features that require sending data to our secure 
             servers for processing. These features include:
           </p>
           <ul>
-            <li><strong>AI Contract Review:</strong> Analyzes contract text to highlight important terms</li>
-            <li><strong>AI Fair Price Calculator:</strong> Suggests pricing based on industry data</li>
             <li><strong>AI Email Assistant:</strong> Helps draft professional emails to brands</li>
           </ul>
           <p>
@@ -128,7 +126,7 @@ export default function PrivacyPolicy() {
           
           <h3>5.1 Local Storage</h3>
           <p>
-            Your deals, invoices, and brand information are stored locally on your device using 
+            Your deals, brands, and profile information are stored locally on your device using 
             secure database technology. This data remains on your device unless you:
           </p>
           <ul>
