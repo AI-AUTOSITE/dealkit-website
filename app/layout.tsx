@@ -77,18 +77,6 @@ export const metadata: Metadata = {
     },
   },
   
-  // App Links
-  appLinks: {
-    ios: {
-      app_store_id: 'YOUR_APP_STORE_ID', // TODO: Update after App Store approval
-      app_name: siteName,
-    },
-    android: {
-      package: 'com.defrust.dealkit',
-      app_name: siteName,
-    },
-  },
-  
   // Other
   category: 'business',
 }
