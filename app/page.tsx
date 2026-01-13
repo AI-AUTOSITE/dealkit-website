@@ -67,49 +67,62 @@ export default function Home() {
         </div>
       </section>
 
-      {/* App Preview */}
-      <section className="py-20 px-6 overflow-hidden">
-        <div className="max-w-6xl mx-auto">
-          <div className="relative flex justify-center">
-            {/* Phone mockup */}
-            <div className="relative w-[280px] h-[580px] bg-[#1c1c1f] rounded-[3rem] border-4 border-[#27272a] shadow-2xl animate-float">
-              {/* Screen content */}
-              <div className="absolute inset-4 bg-[#0a0a0b] rounded-[2.5rem] overflow-hidden">
-                {/* Status bar */}
-                <div className="h-12 bg-[#141416] flex items-center justify-between px-6">
-                  <span className="text-xs text-[#71717a]">9:41</span>
-                  <div className="flex gap-1">
-                    <div className="w-4 h-2 bg-[#71717a] rounded-sm"></div>
-                    <div className="w-4 h-2 bg-[#71717a] rounded-sm"></div>
+      {/* App Preview - Screenshot Showcase */}
+      <section className="py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
+              See the App in Action
+            </h2>
+            <p className="text-[#a1a1aa]">
+              Beautiful dark mode interface designed for creators
+            </p>
+          </div>
+          
+          {/* Screenshot Carousel */}
+          <div className="relative -mx-6 px-6">
+            <div className="flex gap-6 overflow-x-auto pb-6 snap-x snap-mandatory" style={{ scrollbarWidth: 'thin', scrollbarColor: '#27272a #0a0a0b' }}>
+              {[
+                { src: '/screenshots/deals.png', label: 'Deal Pipeline', desc: 'Track all your brand deals in one place' },
+                { src: '/screenshots/deal-details.png', label: 'Deal Details', desc: 'Progress tracking & deliverables' },
+                { src: '/screenshots/email.png', label: 'Quick Email Builder', desc: 'Professional outreach templates' },
+                { src: '/screenshots/brands.png', label: 'Brand Discovery', desc: 'Find and save brand contacts' },
+                { src: '/screenshots/profile.png', label: 'Creator Profile', desc: 'Your stats & achievements' },
+              ].map((screen, i) => (
+                <div key={i} className="flex-shrink-0 snap-center first:pl-4 last:pr-4">
+                  <div className="relative w-[260px] md:w-[280px] group">
+                    {/* Phone Frame */}
+                    <div className="relative bg-[#1c1c1f] rounded-[2.5rem] p-2 shadow-2xl border border-[#27272a] hover:border-purple-500/30 transition-all duration-300 hover:shadow-purple-500/10 hover:shadow-2xl">
+                      {/* Dynamic Island / Notch */}
+                      <div className="absolute top-4 left-1/2 -translate-x-1/2 w-24 h-6 bg-black rounded-full z-10"></div>
+                      
+                      {/* Screenshot Image */}
+                      <div className="rounded-[2rem] overflow-hidden bg-[#0a0a0b] aspect-[9/19.5]">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img 
+                          src={screen.src} 
+                          alt={screen.label}
+                          className="w-full h-full object-cover object-top"
+                        />
+                      </div>
+                      
+                      {/* Home Indicator */}
+                      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 w-28 h-1 bg-[#27272a] rounded-full"></div>
+                    </div>
+                    
+                    {/* Label */}
+                    <div className="mt-4 text-center">
+                      <h3 className="text-white font-semibold text-lg">{screen.label}</h3>
+                      <p className="text-[#71717a] text-sm mt-1">{screen.desc}</p>
+                    </div>
                   </div>
                 </div>
-                
-                {/* App content preview */}
-                <div className="p-4">
-                  <h3 className="text-lg font-semibold text-white mb-4">My Deals</h3>
-                  
-                  {/* Deal cards */}
-                  {[
-                    { brand: 'Nike', amount: '$2,500', status: 'Contracted', color: 'bg-teal-500' },
-                    { brand: 'Spotify', amount: '$1,800', status: 'In Progress', color: 'bg-orange-500' },
-                    { brand: 'Adobe', amount: '$3,200', status: 'Completed', color: 'bg-green-500' },
-                  ].map((deal, i) => (
-                    <div key={i} className="bg-[#141416] rounded-xl p-3 mb-3 border border-[#27272a]">
-                      <div className="flex items-center justify-between mb-2">
-                        <span className="font-medium text-white text-sm">{deal.brand}</span>
-                        <span className="text-purple-400 font-semibold text-sm">{deal.amount}</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <span className={`w-2 h-2 rounded-full ${deal.color}`}></span>
-                        <span className="text-xs text-[#71717a]">{deal.status}</span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              
-              {/* Home indicator */}
-              <div className="absolute bottom-2 left-1/2 -translate-x-1/2 w-32 h-1 bg-[#27272a] rounded-full"></div>
+              ))}
+            </div>
+            
+            {/* Scroll Hint */}
+            <div className="flex justify-center gap-2 mt-4">
+              <span className="text-[#71717a] text-sm">← Scroll to see more →</span>
             </div>
           </div>
         </div>
@@ -142,8 +155,8 @@ export default function Home() {
               },
               {
                 icon: '✉️',
-                title: 'Email Templates',
-                description: 'AI-powered email assistant helps you draft professional messages to brands quickly and easily.',
+                title: 'Quick Email Builder',
+                description: 'Pre-made email templates help you draft professional messages to brands quickly and easily.',
               },
               {
                 icon: '👤',
@@ -196,7 +209,7 @@ export default function Home() {
               {[
                 'Unlimited deals',
                 'Unlimited brands',
-                'AI Email Assistant',
+                'Email Templates',
                 'Dark mode',
                 'Export your data',
                 'No ads ever',

@@ -2,8 +2,12 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy - DealKit',
-  description: 'Privacy Policy for DealKit - Deal Management for Creators',
+  title: 'Privacy Policy',
+  description: 'DealKit Privacy Policy - Learn how we protect your data. We don\'t collect personal information. All data stays on your device.',
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 export default function PrivacyPolicy() {
