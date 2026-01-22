@@ -32,8 +32,8 @@ export default function PrivacyPolicy() {
       <main className="max-w-4xl mx-auto px-6 py-12">
         <article className="prose">
           <h1>Privacy Policy</h1>
-          <p><strong>Last Updated:</strong> January 12, 2026</p>
-          <p><strong>Effective Date:</strong> January 12, 2026</p>
+          <p><strong>Last Updated:</strong> January 18, 2026</p>
+          <p><strong>Effective Date:</strong> January 18, 2026</p>
           
           <p>
             Defrust (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) operates the DealKit mobile application 
@@ -85,30 +85,26 @@ export default function PrivacyPolicy() {
             </li>
           </ul>
 
-          <h3>2.3 AI-Powered Features</h3>
+          <h3>2.3 Pro Tools Features</h3>
           <p>
-            DealKit offers AI-powered features that require sending data to our secure 
-            servers for processing. These features include:
+            DealKit offers professional tools that help you manage your creator business.
+            These features include:
           </p>
           <ul>
-            <li><strong>AI Email Assistant:</strong> Helps draft professional emails to brands</li>
+            <li><strong>Rate Calculator:</strong> Calculates suggested rates based on your metrics</li>
+            <li><strong>Contract Review:</strong> Analyzes contract text for important terms</li>
+            <li><strong>Email Templates:</strong> Provides pre-written professional email templates</li>
+            <li><strong>Usage Calculator:</strong> Calculates licensing fees for usage rights</li>
           </ul>
           <p>
-            <strong>When you use these AI features:</strong>
+            <strong>Important:</strong> All these features process data locally on your device. 
+            No data is sent to external servers.
           </p>
-          <ul>
-            <li>The relevant data is sent to our secure servers via encrypted connection (HTTPS)</li>
-            <li>Data is processed by our AI system to generate results</li>
-            <li><strong>Data is immediately deleted after processing</strong> - we do not store your content</li>
-            <li>We do not use your data to train AI models</li>
-            <li>We do not log or retain any personally identifiable information from AI requests</li>
-          </ul>
 
           <h2>3. How We Use Your Information</h2>
           <p>We use the information we collect to:</p>
           <ul>
             <li>Provide and maintain the App&apos;s core functionality</li>
-            <li>Process AI feature requests (when you choose to use them)</li>
             <li>Fix bugs and improve App stability</li>
             <li>Understand how features are used to make improvements</li>
             <li>Respond to your support requests</li>
@@ -131,19 +127,16 @@ export default function PrivacyPolicy() {
           <h3>5.1 Local Storage</h3>
           <p>
             Your deals, brands, and profile information are stored locally on your device using 
-            secure database technology. This data remains on your device unless you:
+            secure database technology. This data remains on your device unless you choose to 
+            use the Export feature to create a backup file.
           </p>
-          <ul>
-            <li>Use the Export feature to create a backup file</li>
-            <li>Use an AI-powered feature that requires server processing</li>
-          </ul>
 
           <h3>5.2 Data Security</h3>
           <p>We implement appropriate security measures including:</p>
           <ul>
-            <li>Encrypted data transmission (HTTPS/TLS) for all server communications</li>
-            <li>Immediate deletion of AI-processed data after results are returned</li>
-            <li>No persistent storage of user content on our servers</li>
+            <li>Secure local database storage on your device</li>
+            <li>Encrypted data transmission (HTTPS/TLS) for crash report communications</li>
+            <li>No storage of user content on our servers</li>
             <li>Regular security reviews of our systems</li>
           </ul>
 
@@ -157,23 +150,18 @@ export default function PrivacyPolicy() {
                 Sentry Privacy Policy
               </a>
             </li>
-            <li>
-              <strong>Anthropic Claude API</strong>: Powers our AI features. When you use AI 
-              features, relevant data is processed through Anthropic&apos;s API. 
-              <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener noreferrer">
-                Anthropic Privacy Policy
-              </a>
-            </li>
           </ul>
+          <p>
+            <strong>Note:</strong> All Pro Tools (Rate Calculator, Contract Review, Email Templates, 
+            Usage Calculator) process data entirely on your device and do not send data to 
+            any external services.
+          </p>
 
           <h2>7. Data Retention</h2>
           <ul>
             <li>
               <strong>Local Data:</strong> Stored on your device until you delete it or 
               uninstall the App
-            </li>
-            <li>
-              <strong>AI Processing Data:</strong> Deleted immediately after processing is complete
             </li>
             <li>
               <strong>Crash Reports:</strong> Retained for up to 90 days to allow for bug analysis
@@ -196,8 +184,7 @@ export default function PrivacyPolicy() {
               <strong>Delete:</strong> Delete individual items or all data through the App settings
             </li>
             <li>
-              <strong>Opt-out of AI Features:</strong> AI features are optional and require 
-              explicit action to use
+              <strong>Portability:</strong> Import and export your data freely between devices
             </li>
           </ul>
 
@@ -208,11 +195,11 @@ export default function PrivacyPolicy() {
             and believe your child has provided us with personal information, please contact us.
           </p>
 
-          <h2>10. International Data Transfers</h2>
+          <h2>10. International Users</h2>
           <p>
-            If you use AI-powered features, your data may be processed on servers located outside 
-            your country of residence. We ensure appropriate safeguards are in place for any 
-            international data transfers.
+            DealKit stores all user data locally on your device. Since your data never leaves 
+            your device (except for anonymous crash reports), there are no international data 
+            transfers of your personal information.
           </p>
 
           <h2>11. Changes to This Privacy Policy</h2>
@@ -246,7 +233,7 @@ export default function PrivacyPolicy() {
       <footer className="py-8 px-6 border-t border-[#27272a]">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-[#71717a]">
-            © 2025 Defrust. All rights reserved.
+            © 2026 Defrust. All rights reserved.
           </p>
           <nav className="flex items-center gap-6">
             <Link href="/" className="text-sm text-[#71717a] hover:text-white transition-colors">

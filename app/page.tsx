@@ -43,9 +43,10 @@ export default function Home() {
           </p>
           
           <div className="animate-fade-in-delay-3 flex flex-col sm:flex-row gap-4 justify-center">
-            {/* TODO: Update with actual App Store link after approval */}
             <a 
-              href="#" 
+              href="https://apps.apple.com/us/app/dealkit/id6757729007" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-purple-600 to-purple-500 text-white font-semibold hover:from-purple-500 hover:to-purple-400 transition-all glow"
             >
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
@@ -53,16 +54,18 @@ export default function Home() {
               </svg>
               App Store
             </a>
-            {/* TODO: Update with actual Google Play link after approval */}
-            <a 
-              href="#" 
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#1c1c1f] border border-[#27272a] text-white font-semibold hover:bg-[#27272a] transition-all"
+            {/* Google Play - Coming Soon (Jan 30, 2026) */}
+            <div 
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#1c1c1f] border border-[#27272a] text-[#71717a] font-semibold cursor-not-allowed"
             >
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 010 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/>
               </svg>
-              Google Play
-            </a>
+              <span className="flex flex-col items-start leading-tight">
+                <span className="text-xs text-[#52525b]">Coming Jan 30</span>
+                <span>Google Play</span>
+              </span>
+            </div>
           </div>
         </div>
       </section>
@@ -209,9 +212,11 @@ export default function Home() {
               {[
                 'Unlimited deals',
                 'Unlimited brands',
+                'Rate Calculator',
+                'Contract Review',
                 'Email Templates',
-                'Dark mode',
-                'Export your data',
+                'Usage Calculator',
+                'Data Export/Import',
                 'No ads ever',
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-3 text-[#a1a1aa]">
@@ -224,7 +229,9 @@ export default function Home() {
             </ul>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="#" 
+                href="https://apps.apple.com/us/app/dealkit/id6757729007" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-purple-600 to-purple-500 text-white font-semibold hover:from-purple-500 hover:to-purple-400 transition-all glow"
               >
                 Download Free
@@ -234,43 +241,49 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Coming Soon - AI Features */}
+      {/* Pro Tools Section */}
       <section className="py-20 px-6 bg-[#0f0f10]">
         <div className="max-w-4xl mx-auto text-center">
           <span className="inline-block px-4 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-sm font-medium mb-6">
-            🚀 Coming Soon
+            🛠️ Pro Tools Included
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            More AI-Powered Features
+            Powerful Tools for<br />
+            <span className="gradient-text">Serious Creators</span>
           </h2>
           <p className="text-[#a1a1aa] text-lg mb-12 max-w-2xl mx-auto">
-            We&apos;re working on more powerful AI features to help you grow your creator business.
+            Professional-grade tools to help you negotiate better deals and grow your creator business.
           </p>
           
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                icon: '📝',
-                title: 'AI Contract Review',
-                description: 'Automatically analyze contracts and highlight important terms, red flags, and negotiation points.',
-              },
-              {
                 icon: '💰',
-                title: 'Fair Price Calculator',
-                description: 'Get AI-powered pricing suggestions based on your metrics and industry standards.',
+                title: 'Rate Calculator',
+                description: 'Calculate fair rates based on your followers, engagement, and niche.',
               },
               {
-                icon: '📈',
-                title: 'Analytics Dashboard',
-                description: 'Track your earnings, deal success rates, and growth over time with beautiful charts.',
+                icon: '📝',
+                title: 'Contract Review',
+                description: 'Analyze contracts and identify red flags, important terms, and negotiation points.',
+              },
+              {
+                icon: '✉️',
+                title: 'Email Templates',
+                description: 'Professional email templates for negotiations, follow-ups, and payment reminders.',
+              },
+              {
+                icon: '📊',
+                title: 'Usage Calculator',
+                description: 'Calculate usage rights fees for different licensing terms and durations.',
               },
             ].map((feature, i) => (
               <div 
                 key={i} 
-                className="p-6 rounded-2xl bg-[#141416]/50 border border-[#27272a] opacity-75"
+                className="p-6 rounded-2xl bg-[#141416] border border-[#27272a] hover:border-purple-500/30 transition-colors group"
               >
                 <div className="text-3xl mb-4">{feature.icon}</div>
-                <h3 className="text-lg font-semibold text-white mb-2">
+                <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-purple-400 transition-colors">
                   {feature.title}
                 </h3>
                 <p className="text-[#71717a] text-sm leading-relaxed">
@@ -294,7 +307,9 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="#" 
+              href="https://apps.apple.com/us/app/dealkit/id6757729007" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-purple-600 to-purple-500 text-white font-semibold hover:from-purple-500 hover:to-purple-400 transition-all glow"
             >
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
@@ -302,15 +317,18 @@ export default function Home() {
               </svg>
               App Store
             </a>
-            <a 
-              href="#" 
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#1c1c1f] border border-[#27272a] text-white font-semibold hover:bg-[#27272a] transition-all"
+            {/* Google Play - Coming Soon (Jan 30, 2026) */}
+            <div 
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#1c1c1f] border border-[#27272a] text-[#71717a] font-semibold cursor-not-allowed"
             >
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 010 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/>
               </svg>
-              Google Play
-            </a>
+              <span className="flex flex-col items-start leading-tight">
+                <span className="text-xs text-[#52525b]">Coming Jan 30</span>
+                <span>Google Play</span>
+              </span>
+            </div>
           </div>
         </div>
       </section>
@@ -339,7 +357,7 @@ export default function Home() {
             </nav>
             
             <p className="text-sm text-[#71717a]">
-              © 2025 Defrust. All rights reserved.
+              © 2026 Defrust. All rights reserved.
             </p>
           </div>
         </div>

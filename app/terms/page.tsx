@@ -28,8 +28,8 @@ export default function TermsOfService() {
       <main className="max-w-4xl mx-auto px-6 py-12">
         <article className="prose">
           <h1>Terms of Service</h1>
-          <p><strong>Last Updated:</strong> January 12, 2026</p>
-          <p><strong>Effective Date:</strong> January 12, 2026</p>
+          <p><strong>Last Updated:</strong> January 18, 2026</p>
+          <p><strong>Effective Date:</strong> January 18, 2026</p>
 
           <p>
             Welcome to DealKit. These Terms of Service (&quot;Terms&quot;) govern your use of the 
@@ -65,25 +65,27 @@ export default function TermsOfService() {
 
           <h2>4. Free Service</h2>
           <p>
-            DealKit is currently provided free of charge. All features are available at no cost.
+            DealKit is provided completely free of charge. All features are available at no cost 
+            with no limitations.
           </p>
           <ul>
-            <li>We reserve the right to introduce premium features in the future</li>
-            <li>If premium features are introduced, existing free features will remain free</li>
-            <li>Any future paid features will be clearly marked and optional</li>
-            <li>We will provide reasonable notice before any pricing changes</li>
+            <li>All features are free, including Pro Tools</li>
+            <li>No advertisements</li>
+            <li>No in-app purchases</li>
+            <li>No premium tiers or subscriptions</li>
           </ul>
 
-          <h2>5. AI-Powered Features</h2>
+          <h2>5. Pro Tools Features</h2>
           <p>
-            Our AI-powered features (such as the Email Assistant) are provided &quot;as is&quot; 
-            and for informational purposes only.
+            Our Pro Tools (Rate Calculator, Contract Review, Email Templates, Usage Calculator) 
+            are provided &quot;as is&quot; and for informational purposes only.
           </p>
           <ul>
-            <li>AI suggestions are not professional legal, financial, or business advice</li>
+            <li>Rate calculations are estimates and may vary based on actual market conditions</li>
+            <li>Contract reviews highlight common issues but may not catch everything</li>
             <li>You should consult qualified professionals for important decisions</li>
-            <li>We do not guarantee the accuracy of AI-generated content</li>
-            <li>You are responsible for reviewing and verifying all AI outputs</li>
+            <li>We do not guarantee the accuracy of calculations or suggestions</li>
+            <li>You are responsible for reviewing and verifying all outputs</li>
           </ul>
 
           <h2>6. Your Data</h2>
@@ -176,7 +178,7 @@ export default function TermsOfService() {
       <footer className="py-8 px-6 border-t border-[#27272a]">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-[#71717a]">
-            © 2025 Defrust. All rights reserved.
+            © 2026 Defrust. All rights reserved.
           </p>
           <nav className="flex items-center gap-6">
             <Link href="/" className="text-sm text-[#71717a] hover:text-white transition-colors">
