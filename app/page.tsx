@@ -54,7 +54,7 @@ export default function Home() {
               </svg>
               App Store
             </a>
-            {/* Google Play - Coming Soon (Jan 30, 2026) */}
+            {/* Google Play - Coming Soon */}
             <div 
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#1c1c1f] border border-[#27272a] text-[#71717a] font-semibold cursor-not-allowed"
             >
@@ -62,7 +62,7 @@ export default function Home() {
                 <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 010 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/>
               </svg>
               <span className="flex flex-col items-start leading-tight">
-                <span className="text-xs text-[#52525b]">Coming Jan 30</span>
+                <span className="text-xs text-[#52525b]">Coming Soon</span>
                 <span>Google Play</span>
               </span>
             </div>
@@ -317,7 +317,7 @@ export default function Home() {
               </svg>
               App Store
             </a>
-            {/* Google Play - Coming Soon (Jan 30, 2026) */}
+            {/* Google Play - Coming Soon */}
             <div 
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#1c1c1f] border border-[#27272a] text-[#71717a] font-semibold cursor-not-allowed"
             >
@@ -325,7 +325,7 @@ export default function Home() {
                 <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 010 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/>
               </svg>
               <span className="flex flex-col items-start leading-tight">
-                <span className="text-xs text-[#52525b]">Coming Jan 30</span>
+                <span className="text-xs text-[#52525b]">Coming Soon</span>
                 <span>Google Play</span>
               </span>
             </div>
